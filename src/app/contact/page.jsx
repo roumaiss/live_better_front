@@ -30,7 +30,7 @@ export default function ContactForm() {
 
     try {
       const response = await axios.post(
-        "http://localhost:6941/api/v1/contact",
+        "https://backend-template-live-better.onrender.com/api/v1/contact",
         formData
       );
 
