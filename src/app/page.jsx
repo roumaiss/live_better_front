@@ -56,10 +56,10 @@ export default function Home() {
             </div>
 
             {/* Hero Section */}
-            <div className="flex items-center justify-between max-w-screen-xl mx-auto bg-blue-50 border-b border-blue-500">
+            <div className="flex flex-col lg:flex-row items-center justify-between max-w-screen-xl  mx-[2rem] lg:mx-[5rem] bg-blue-50 border-b border-blue-500 my-10">
                 {/* Text on the left */}
-                <div className="w-1/2 mb-20">
-                    <h1 className="text-5xl text-blue-700 font-bold mb-4">
+                <div className="w-full lg:w-1/2 mb-10 lg:mb-20">
+                    <h1 className=" text-2xl md:text-3xl lg:text-5xl text-blue-700 font-bold mb-4">
                         Build Healthy Habits, One Step at a Time
                     </h1>
                     <p className="text-lg text-gray-500 mb-8">
@@ -76,7 +76,7 @@ export default function Home() {
                     </Link>
                 </div>
 
-                <div className="w-[600px]">
+                <div className=" w-full lg:w-[600px]">
                     <img
                         src="/health-page.png"
                         alt="Hero Image"
