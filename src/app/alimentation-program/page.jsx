@@ -62,17 +62,17 @@ export default function AlimentationProgram() {
             <div>
                 {/* Navbar */}
                 <Navbar />
-                <div className="flex items-center justify-between max-w-screen-xl mx-auto bg-blue-50 border-b border-blue-500">
+                <div className="flex flex-col lg:flex-row items-center justify-between  lg:p-12 gap-6 mx-[2rem] lg:mx-[5rem] bg-blue-50 border-b border-blue-500">
                     {/* Text on the left */}
-                    <div className="w-[600px]">
+                    <div className="w-full lg:w-[600px]">
                         <img
                             src="/recipe-page.png"
                             alt="Hero Image"
                             className="rounded-lg"
                         />
                     </div>
-                    <div className="w-1/2 mb-20">
-                        <h1 className="text-5xl text-blue-700 font-bold mb-4">
+                    <div className="w-full lg:w-1/2 mb-20">
+                        <h1 className="text-2xl md:text-3xl lg:text-5xl text-blue-700 font-bold mb-4">
                             Fuel Your Body, One Meal at a Time
                         </h1>
                         <p className="text-lg text-gray-500 mb-8">
@@ -83,24 +83,19 @@ export default function AlimentationProgram() {
                             nourish your body for optimal health. Let’s make
                             every bite count!
                         </p>
-                        <Link
-                            href=""
-                            className="bg-blue-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300"
-                        >
-                            Start Your Journey
-                        </Link>
+                        
                     </div>
                 </div>
 
                 {/* Paragraph Section */}
                 <div className="p-6 max-w-screen-xl mx-auto">
-                    <h1 className="text-5xl text-blue-700 font-bold flex justify-center ">
+                    <h1 className="text-xl md:text-2xl lg:text-4xl text-blue-700 font-bold flex justify-center ">
                         Our Recipes
                     </h1>
                 </div>
 
                 {/* Recipe Grid */}
-                <div className="grid grid-cols-3 gap-16 p-6 max-w-screen-xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-16 p-6 max-w-screen-xl mx-auto">
                     {recipes.map((recipe) => (
                         <div
                             key={recipe.id}

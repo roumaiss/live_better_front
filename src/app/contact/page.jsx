@@ -54,9 +54,8 @@ export default function ContactForm() {
     <>
       <Navbar />
       <section>
-        <div className="grid max-w-screen-xl px-4 py-8 mx-auto my-[5rem] lg:py-16 lg:grid-cols-12">
-          <div className="w-full h-[600px] place-self-center lg:col-span-6">
-            <div className="p-6 mx-auto bg-white rounded-lg shadow sm:max-w-xl sm:p-8">
+        <div className="flex flex-col gap-6 lg:flex-row justify-between items-center my-[2rem] lg:p-12 mx-[2rem] lg:mx-[5rem] ">
+            <div className="p-4 lg:p-12 w-full lg:w-1/2 mx-auto bg-white rounded-lg shadow sm:p-8">
               <h1 className="mb-2 text-2xl font-bold leading-tight tracking-tight mt-10 text-black">
                 Contact Us
               </h1>
@@ -64,7 +63,7 @@ export default function ContactForm() {
                 <p className="text-sm text-green-500">{responseMessage}</p>
               )}
               <form className="mt-4 space-y-6 sm:mt-6" onSubmit={handleSubmit}>
-                <div className="grid gap-6 sm:grid-cols-2">
+                <div className="flex flex-col gap-4">
                   <div>
                     <label
                       htmlFor="email"
@@ -127,12 +126,11 @@ export default function ContactForm() {
                 </button>
               </form>
             </div>
-          </div>
-          <div className="hidden lg:flex lg:col-span-6 lg:h-auto">
+          <div className="w-full lg:w-1/2">
             <img
               src="/login.jpg"
               alt="login image"
-              className="w-full h-[600px] rounded-lg object-cover object-center"
+              className="rounded-lg object-cover object-center"
             />
           </div>
         </div>

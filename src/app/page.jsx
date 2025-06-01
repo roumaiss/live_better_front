@@ -69,8 +69,8 @@ export default function Home() {
                         happier you.
                     </p>
                     <Link
-                        href=""
-                        className="bg-blue-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300"
+                        href="/alimentation-program"
+                        className="bg-blue-500  text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300"
                     >
                         Start Your Journey
                     </Link>

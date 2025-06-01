@@ -30,16 +30,16 @@ export default function About() {
     return (
         <>
             <Navbar />
-            <div className="flex justify-center items-center p-16 gap-6 ">
+            <div className="flex flex-col lg:flex-row justify-between items-center lg:p-12 gap-6 mx-[2rem] lg:mx-[5rem] ">
                 <div>
                     <img src="/about-us.png" alt="" />
                 </div>
-                <div className="flex flex-col justify-around items-around h-[400px] text-blue-700">
-                    <h1 className="text-5xl text-blue-700 font-bold">
+                <div className="flex flex-col justify-around items-around text-blue-700">
+                    <h1 className="text-2xl md:text-3xl lg:text-5xl text-blue-700 font-bold">
                         About Us
                     </h1>
                     <div className="flex flex-col gap-4">
-                        <p className="text-lg text-blue-700 ">
+                        <p className="lg:text-lg text-blue-700 ">
                             Welcome to (Title), your go-to platform for healthy
                             living! We make wellness simple with nutritious
                             recipes, expert guidance, and personalized plans to
@@ -57,9 +57,9 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="flex flex-col justify-center gap-8 items-center pb-16">
-                <h1 className="text-5xl text-blue-700 font-bold">Our team</h1>
-                <div className="flex px-16 gap-4 justify-center items-center ">
+            <div className="flex flex-col justify-center gap-8 items-center my-10 mx-[2rem] lg:mx-[5rem]">
+                <h1 className="text-2xl md:text-3xl lg:text-5xl text-blue-700 font-bold">Our team</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center ">
                     {professionals.map((professional) => (
                         <div className=" card-body border bg-blue-100 rounded-2xl ">
                             <div className="flex flex-col justify-center items-center gap-4 text-center">

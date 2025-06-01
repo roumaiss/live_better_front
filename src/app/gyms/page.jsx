@@ -64,36 +64,36 @@ export default function Gyms() {
 
       {/* Hero Section */}
 
-      <div className="flex items-center justify-between max-w-screen-xl mx-auto bg-blue-50 border-b border-blue-500">
+      <div className="flex flex-col lg:flex-row items-center justify-between  lg:p-12 gap-6 mx-[2rem] lg:mx-[5rem] bg-blue-50 border-b border-blue-500">
         {/* Text on the left */}
-        <div className="w-[600px]">
+        <div className="w-full lg:w-[600px]">
           <img src="/Gym-bro.png" alt="Hero Image" className="rounded-lg" />
         </div>
-        <div className="w-1/2 mb-20">
-          <h1 className="text-5xl text-blue-700 font-bold mb-4">
+        <div className="w-full lg:w-1/2 mb-20">
+          <h1 className="text-2xl md:text-3xl lg:text-5xl text-blue-700 font-bold mb-4">
             Crush Your Fitness Goals, One Rep at a Time
           </h1>
-          <p className="text-lg text-gray-500 mb-8">
+          <p className="lg:text-lg text-gray-500 mb-8">
             Unlock your full potential with a fitness routine that works for
             you. From strength training to endurance and recovery, we'll help
             you stay motivated and consistent as you build a stronger, healthier
             version of yourself. Let’s make every workout count!
           </p>
-          <Link
+          {/* <Link
             href=""
             className="bg-blue-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300"
           >
             Start Your Journey
-          </Link>
+          </Link> */}
         </div>
       </div>
 
       {/* ////////////////// */}
-      <div className="px-16 py-8">
-        <h2 className="text-5xl font-bold text-center text-blue-700 mb-5 p-2">
+      <div className=" mx-[2rem] lg:mx-[5rem] py-8">
+        <h2 className="text-xl md:text-2xl lg:text-4xl font-bold text-center text-blue-700 mb-5 ">
           Meet our professional coaches
         </h2>
-        <div className="grid grid-cols-3 gap-5 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 ">
           {coaches.map((coach) => (
             <div
               key={coach.id}
@@ -121,11 +121,11 @@ export default function Gyms() {
 
       {/* ////////////////// */}
 
-      <div className="px-16 py-8">
-        <h2 className="text-5xl font-bold text-center text-blue-700 mb-5 p-2">
+      <div className="mx-[2rem] lg:mx-[5rem] py-8">
+        <h2 className="text-xl md:text-2xl lg:text-4xl font-bold text-center text-blue-700 mb-5 p-2">
           Our partners
         </h2>
-        <div className="grid grid-cols-3 gap-5 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 ">
           {gyms.map((gym) => (
             <div
               key={gym.id}

@@ -186,10 +186,10 @@ export default async function RecipeDetail({ params }) {
   return (
     <>
       <Navbar />
-      <div className="p-6 max-w-screen-xl flex justify-center items-center flex-col mx-auto ">
-        <div className="flex justify-center shadow-xl mb-5 rounded-lg items-center gap-4 border  py-16">
-          <div className="flex flex-col items-center justify-end bg-blue-100 w-1/3 p-4 rounded-2xl">
-            <h1 className="text-3xl text-blue-700 font-bold mb-4">
+      <div className="  flex  justify-center items-center flex-col mx-[2rem] lg:mx-[5rem] my-[2rem]">
+        <div className="flex flex-col lg:flex-row justify-center shadow-xl mb-5  rounded-lg items-center gap-4 border p-2 ">
+          <div className="flex flex-col items-center justify-end bg-blue-100  lg:w-1/3 p-6 rounded-2xl">
+            <h1 className="text-xl lg:text-3xl text-blue-700 font-bold mb-4">
               {recipe.title}
             </h1>
 
@@ -209,15 +209,15 @@ export default async function RecipeDetail({ params }) {
           />
         </div>
 
-        <div className="flex gap-4 p-4">
+        <div className="flex flex-col md:flex-row gap-4 p-4">
           {/* Ingredients Section */}
           <div className="flex flex-col gap-4 w-full max-w-2xl mb-6 bg-blue-100 p-4 rounded-2xl">
             <h2 className="text-2xl text-blue-700 font-semibold mb-4">
               Ingredients
             </h2>
-            <ul className="list-disc list-inside flex flex-col gap-4 ">
+            <ul className="list-disc list-inside flex flex-col gap-4 h-[20rem]">
               {recipe.ingredients.map((ingredient, index) => (
-                <li key={index} className="text-gray-700 mb-2">
+                <li key={index} className="text-gray-700 mb-2 ">
                   {ingredient}
                 </li>
               ))}
@@ -229,7 +229,7 @@ export default async function RecipeDetail({ params }) {
             <h2 className="text-2xl text-blue-700 font-semibold mb-4">
               Instructions
             </h2>
-            <ol className="list-decimal list-inside flex flex-col gap-4 ">
+            <ol className="list-decimal list-inside flex flex-col gap-4 h-[20rem]">
               {recipe.instructions.map((step, index) => (
                 <li key={index} className="text-gray-700 mb-2">
                   {step}

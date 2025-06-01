@@ -46,9 +46,9 @@ export default function Navbar() {
 
   const links = [
     { href: "/about", label: "About us" },
-    { href: "/alimentation-program", label: "NutriRecipes" },
-    { href: "/gyms", label: "Gyms" },
-    { href: "/contact", label: "Contact" },
+    { href: "/alimentation-program", label: "Nutrition Plans" },
+    { href: "/gyms", label: "Find a Gym" },
+    { href: "/contact", label: "Get in Touch" },
   ];
 
   if (isLoggedIn) {
