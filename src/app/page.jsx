@@ -56,7 +56,7 @@ export default function Home() {
             </div>
 
             {/* Hero Section */}
-            <div className="flex flex-col lg:flex-row items-center justify-between max-w-screen-xl  mx-[2rem] lg:mx-[5rem] bg-blue-50 border-b border-blue-500 my-10 lg:my-0">
+            <div className="flex flex-col lg:flex-row items-center justify-between  mx-[2rem] lg:mx-[10rem] bg-blue-50 border-b border-blue-500 my-10 lg:my-0">
                 {/* Text on the left */}
                 <div className="w-full lg:w-1/2 mb-10 lg:mb-20">
                     <h1 className=" text-2xl md:text-3xl lg:text-5xl text-blue-700 font-bold mb-4">
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
 
             {/* Grid Section for Recipes */}
-            <div className="max-w-screen-xl  py-10 mx-[2rem] lg:mx-[5rem] ">
+            <div className="  py-10 mx-[2rem] lg:mx-[10rem] ">
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-center text-blue-700 mb-5">
                     Popular Recipes
                 </h2>
