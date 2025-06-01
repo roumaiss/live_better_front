@@ -57,7 +57,7 @@ export default function Navbar() {
 
   return (
     <header className="bg-transparent">
-      <nav className="max-w-screen-xl mx-auto lg:p-5 bg-transparent">
+      <nav className=" bg-transparent mx-[2rem] lg:mx-[5rem]">
         <div className="flex justify-between items-center bg-transparent">
           {/* Logo */}
           <Link href="/" className="text-blue-700 text-5xl">
